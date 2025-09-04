@@ -36,7 +36,7 @@ const postReducer = (state, action) => {
             return {
                 ...state,
                 loading: false,
-                posts: [...state.posts, action.data]
+                posts: [ action.data,...state.posts,]
             }
         }
 
